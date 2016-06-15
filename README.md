@@ -1,6 +1,6 @@
 # Lanyon
 
-This is my personal port of the Lanyon theme for Nikola and the demo for the same can be seen at my personal [website](https://mrinalpurohit.in){:target="_blank"}
+This is my personal port of the Lanyon theme for Nikola and the demo for the same can be seen at my personal [website](https://mrinalpurohit.in)
 
 # Readme (as written by the Nikola developers)
 
