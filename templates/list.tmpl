@@ -1,0 +1,22 @@
+## -*- coding: utf-8 -*-
+<%inherit file="base.tmpl"/>
+
+<%block name="content">
+<article class="listpage">
+    <header>
+        <h1>${title|h}</h1>
+    </header>
+    %if items:
+    <ul class="postlist archive">
+    % for text, link, count in items:
+        <li><a href="${link}"><i class="fa fa-archive" aria-hidden="true"></i> ${text|h}</a>
+        % if count:
+            (${count})
+        % endif
+    % endfor
+    </ul>
+    %else:
+    <p>${messages("Nothing found.")}</p>
+    %endif
+</article>
+</%block>
