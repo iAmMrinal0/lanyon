@@ -9,7 +9,7 @@
     %if items:
     <ul class="postlist archive">
     % for text, link, count in items:
-        <li><a href="${link}"><i class="fa fa-archive" aria-hidden="true"></i> ${text|h}</a>
+        <li><a href="${link}"><i class="fas fa-archive" aria-hidden="true"></i> ${text|h}</a>
         % if count:
             (${count})
         % endif

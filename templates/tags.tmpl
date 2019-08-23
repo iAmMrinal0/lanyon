@@ -14,7 +14,7 @@
             % for i in range(indent_change_before):
                 <ul class="postlist tags">
             % endfor
-            <li><a class="reference fa fa-folder-open" href="${link}">${text}</a>
+            <li><a class="reference" href="${link}"><i class="fas fa-folder-open"></i> ${text}</a>
             % if indent_change_after <= 0:
                 </li>
             % endif
@@ -33,7 +33,7 @@
         <ul class="postlist tags">
         % for text, link in items:
             % if text not in hidden_tags:
-                <li><a class="reference listtitle fa fa-tag" href="${link}">${text|h}</a></li>
+                <li><a class="reference listtitle" href="${link}"><i class="fas fa-tag"></i> ${text|h}</a></li>
             % endif
         % endfor
         </ul>
